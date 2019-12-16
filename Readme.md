@@ -1,15 +1,15 @@
 # MobiFace
 
-1. The repo contains 2 zipped files
-  * 2019-12-13 V 1.2.zip
-  * KaiOS25Nov.zip
+1. The repo contains 2 zipped folders
+  * MobiFace SDK - 2019-12-13 V 1.2
+  * WebApp
 
-2. 2019-12-13 V 1.2.zip
+2. MobiFace SDK - 2019-12-13 V 1.2
   * Contains the SDK binaries along with the dependencies
   * The main Service is in MobiFaceService
   * libFrService.so calls functions inside of the service
 
-3. KaiOS25Nov.zip
+3. WebApp
   * Contains the Web App Sample App used to run the SDK.
   * Use KaiOS IDE to install the Web App onto the device (https://developer.kaiostech.com/getting-started/env-setup/simulator)
 

@@ -1,0 +1,7 @@
+13 Dec 2019
+
+V  1.2
+
+Moved License Installation into the MobiFaceService.
+
+The Service will install the license.
