@@ -22,7 +22,7 @@
   * adb shell
   * cd /system/bin/MobiFace
   * ./MobiFaceService
-5. Install the app and use liveness level 0,1,2,3 in [js/livenesschallenge.js](WebApp%20-%2025-11-19%20V%201.1/js/livenesschallenge.js#238) at line 238 for slam liveness difficulty.
+5. Install the app and use liveness level 0,1,2,3 in [js/livenesschallenge.js](WebApp%20-%2025-11-19%20V%201.1/js/livenesschallenge.js#L238) at line 238 for slam liveness difficulty.
 
 ## For License
 
@@ -33,7 +33,7 @@ Currently there is no way to manage license. To generate the license follow the 
 3. Execute *./RTVClient RC_20190417_164847.rtv 0 test.bmp*
 4. Note the 64 char hex chars and send it to us
 5. We will generate the license and send back to you the data.
-6. Replace the line in the Sample App in [js/livenesschallenge.js](WebApp%20-%2025-11-19%20V%201.1/js/livenesschallenge.js#120) at line 120 with the given data.
+6. Replace the line in the Sample App in [js/livenesschallenge.js](WebApp%20-%2025-11-19%20V%201.1/js/livenesschallenge.js#L120) at line 120 with the given data.
 
 #### Notes
 
@@ -41,7 +41,7 @@ Currently there is no way to manage license. To generate the license follow the 
 2. The license data is generated and is written in the Web App. License is generated using the *ro.expect.recovery_id* and *cid* i.e */sys/block/mmcblk0/device/cid* of the device.
 3. The license.dat file is generated in the /data/MobiFace folder. 
 4. For KaiOS WebIDE for ubuntu can be found at https://developer.kaiostech.com/simulator/linux
-5. Make sure adb remount is available. To enable use
+5. Make sure adb remount is available to push the files into system directory. To enable use
   * adb root
   * adb disable-verity
   * adb reboot
