@@ -1,3 +1,11 @@
+7 Jan 2019
+
+V 1.2 develop
+
+Some changes with license: Service does not save license in this build, the web app should contain the license and keep it in app only. The App send license and the SDK validates it
+
+Fixed Liveness Challenges in Slam
+
 13 Dec 2019
 
 V  1.2
