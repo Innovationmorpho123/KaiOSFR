@@ -26,6 +26,12 @@
 
 ## For License
 
+Starting SDK V 1.3, the old license that may be with you does not work.
+
+The SDK, now uses the licenses generated using the LKMS server.
+
+
+
 Currently there is no way to manage license. To generate the license follow the steps:
 
 1. start *adb shell*
@@ -34,6 +40,16 @@ Currently there is no way to manage license. To generate the license follow the 
 4. Note the 64 char hex chars and send it to us
 5. We will generate the license and send back to you the data.
 6. Replace the line in the Sample App in [js/livenesschallenge.js](WebApp%20-%2025-11-19%20V%201.1/js/livenesschallenge.js#L120) at line 120 with the given data.
+
+
+To generate the License on your own (Not recommended right now)
+
+1. Get deviceID from the Device / Kai Smaartphone
+2. Post the data to License server
+3. Get the JSON response
+4. Exrtact the data part from JSON response
+5. Decode with Base64
+6. Convert the binary obtained to hex and set it as valus in the Sample App in [js/livenesschallenge.js](WebApp%20-%2025-11-19%20V%201.1/js/livenesschallenge.js#L120) at line 120 with the given data.
 
 #### Notes
 
@@ -51,3 +67,11 @@ Currently there is no way to manage license. To generate the license follow the 
 #### Changelog
 
 * Given in the changelog.txt file present
+
+## Issues
+
+1. The App accepts the licenses data as a hex string, so you need the convert the License obtained from server into hex string and send call getFaceAnalysis(license) with the license data obtained after decoding base64 string.
+
+2. Make sure to call stopFaceAaalysis when back is pressed from the smartphone, this is to ensure the memory is freed.
+
+
