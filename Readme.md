@@ -31,20 +31,22 @@ Starting SDK V 1.3, the old license that may be with you does not work.
 The SDK, now uses the licenses generated using the LKMS server.
 
 
-
 Currently there is no way to manage license. To generate the license follow the steps:
 
 1. start *adb shell*
 2. Go to directory with command *cd /system/bin/MobiFace*
-3. Execute *./RTVClient RC_20190417_164847.rtv 0 test.bmp*
+3. Execute *./RTVClient RC_20190417_164847.rtv 4 test.bmp*
 4. Note the 64 char hex chars and send it to us
 5. We will generate the license and send back to you the data.
 6. Replace the line in the Sample App in [js/livenesschallenge.js](WebApp%20-%2025-11-19%20V%201.1/js/livenesschallenge.js#L120) at line 120 with the given data.
 
+If You get error from running RTVClient as *Service Binding failed*, make sure you upload the latest MobiFaceService and reboot the device and then try again.
+
 
 To generate the License on your own (Not recommended right now)
 
-1. Get deviceID from the Device / Kai Smaartphone
+
+1. Get deviceID from the Device / Kai Smartphone
 2. Post the data to License server
 3. Get the JSON response
 4. Exrtact the data part from JSON response
@@ -62,6 +64,7 @@ To generate the License on your own (Not recommended right now)
   * adb disable-verity
   * adb reboot
   * adb remount
+6. The SDK will give result as a bestImage from SDK and matching score if reference image is passed onSuccess of Liveness. If somehow timeout occurs or spoof is detected, the SDK will give match score as 0 and show same refernce image that is passed by you to the API.
 
 
 #### Changelog
@@ -72,6 +75,6 @@ To generate the License on your own (Not recommended right now)
 
 1. The App accepts the licenses data as a hex string, so you need the convert the License obtained from server into hex string and send call getFaceAnalysis(license) with the license data obtained after decoding base64 string.
 
-2. Make sure to call stopFaceAaalysis when back is pressed from the smartphone, this is to ensure the memory is freed.
+2. Make sure to call stopFaceAnalysis when back is pressed from the smartphone, this is to ensure the memory is freed.
 
 
