@@ -22,7 +22,7 @@
   * adb shell
   * cd /system/bin/MobiFace
   * ./MobiFaceService
-5. Install the app and use liveness level 0,1,2,3 in [js/livenesschallenge.js](WebApp%20-%2025-11-19%20V%201.1/js/livenesschallenge.js#L238) at line 256 for slam liveness difficulty.
+5. Install the app and use liveness level 0,1,2,3 in [js/livenesschallenge.js](WebApp%20-%202020-01-30%20V%201.2/js/livenesschallenge.js#L256) at line 256 for slam liveness difficulty.
 
 ## For License
 
