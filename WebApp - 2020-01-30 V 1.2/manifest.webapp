@@ -1,0 +1,46 @@
+{
+  "version": "1.0.0",
+  "name": "MobiFace",
+  "description": "MobiFace",
+  "launch_path": "/splash.html",
+  "icons": {
+    "16": "/img/icons/icon16x16.png",
+    "48": "/img/icons/icon48x48.png",
+    "60": "/img/icons/icon60x60.png",
+    "128": "/img/icons/icon128x128.png"
+  },
+    
+  "cursor":false,
+  "developer": {
+    "name": "Idemia",
+    "url": "http://www.idemia.com"
+  },
+  "type": "certified",
+  "permissions": {
+    "systemXHR": {
+      "description": "Required to load remote content"
+    },
+    "camera": {
+    "description": "Required for accessing cameras on the device."
+  }, 
+  "device-storage:sdcard":  { "access": "readwrite" },
+  "device-storage:pictures":{ "access": "readwrite" },
+  "settings":{"access":"readwrite"}
+  
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "locales": {
+    "es": {
+      "name": "Aplicación privilegiada",
+      "description": "Demuestra cómo utilizar permisos para cargar contenido remoto",
+      "permissions": {
+        "systemXHR": {
+          "description": "Requerido para cargar contenido remoto"
+        }
+      }
+    }
+  },
+  "default_locale": "en"
+}

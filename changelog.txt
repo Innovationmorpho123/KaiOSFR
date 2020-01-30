@@ -1,4 +1,13 @@
-20 Jan 2019
+30 Jan 2020
+
+V 1.3.2
+
+Automatic license fetch from Server (Make sure device is connected to the internet)
+Show timeout screen when Timeout occurs in the SDK on the app
+
+After timeout (which can happens due to spoof or timeout), the app will display the the refernce image that you passed to the SDK and match score as 0.
+
+20 Jan 2020
 
 V 1.3
 
