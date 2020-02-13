@@ -1,15 +1,15 @@
-# MobiFace (Development binary - Can be buggy)
+# MobiFace (Development binary)
 
 1. The repo contains 2 zipped folders
-  * MobiFace SDK - 2020-01-30 V 1.3.2
-  * WebApp - 2020-01-30 V 1.2
+  * MobiFace SDK - 2020-02-11 V 1.3.2
+  * WebApp - 2020-02-11 V 1.2
 
-2. MobiFace SDK - 2020-01-30 V 1.3.2
+2. MobiFace SDK - 2020-02-11 V 1.3.2
   * Contains the SDK binaries along with the dependencies
   * The main Service is in MobiFaceService
   * libFrService.so calls functions inside of the service
 
-3. WebApp - 2020-01-30 V 1.2
+3. WebApp - 2020-02-11 V 1.2
   * Contains the Web App Sample App used to run the SDK.
   * Use KaiOS IDE to install the Web App onto the device (https://developer.kaiostech.com/getting-started/env-setup/simulator)
 
