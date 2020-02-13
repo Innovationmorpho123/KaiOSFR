@@ -325,6 +325,9 @@ var frTest = {
             case 19:
                 showText = 'Authenticating...'
                 break;
+            case 20:
+                showText = 'No Liveness'
+                break;
         }
 
         elem.innerHTML = showText;
@@ -568,6 +571,9 @@ function checkSlamLivenessInfo(analysisInfo) {
         case 19:
             showText = 'Authenticating...'
             break;
+        case 20:
+             showText = 'No Liveness'
+             break;
     }
 
     elem.innerHTML = showText;
