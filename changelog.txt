@@ -5,6 +5,11 @@ FrServiceClient V 1.3.3
 Fixed bugs where it is delaying the dat to the App.
 Signals the App when the livenss is passed and authentication starts.
 
+WebApp V 1.2.1
+
+Fixed Analysis Info to show correct challenge in Slam Liveness in Sample App.
+Sample App not shows when the Liveness Test is passed or fialed or timeout.
+
 30 Jan 2020
 
 V 1.3.2
