@@ -2,7 +2,7 @@
 
 FrServiceClient V 1.3.4
 
-Changes in Textguidliness info to guide user during slamliveness
+Changes in Textguidliness info which guide the user during slamliveness
 
 
 11 Feb 2020
